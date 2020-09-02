@@ -1,4 +1,4 @@
-import React,{CSSProperties, FC} from 'react';
+import React,{ FC} from 'react';
 import classNames from 'classnames';
 
 export type AlertType = 'success' | 'default' | 'danger' | 'warning';
