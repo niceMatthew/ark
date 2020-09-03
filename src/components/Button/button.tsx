@@ -19,18 +19,20 @@ type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
 type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 /**
- * 页面中最常用的的按钮元素，适合于完成特定的交互
- * ### 引用方法
- * 
+ * 这是我们的第一个 Button 组件
+ * ## Button header
  * ~~~js
- * import { Button } from 'arkship'
+ * import { Button } from 'ark'
  * ~~~
  */
 export const Button: FC<ButtonProps> = (props) => {
   const { 
+    /**设置Button的类型 */
     btnType,
     className,
+    /**设置Button的禁用 */
     disabled,
+    /**设置Button的尺寸 */
     size,
     children,
     href,
