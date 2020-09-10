@@ -29,7 +29,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  * 支持 HTMLInput 的所有基本属性
  */
 
- export const Input: FC<InputProps> = (props) => {
+ export  const Input: FC<InputProps> = (props) => {
    const {
      disabled,
      size,
@@ -69,3 +69,5 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
       </div>
    )
  }
+
+ export default Input

@@ -33,11 +33,43 @@ const iconInput = () => (
   <Input
     style={{width: '300px'}}
     placeholder="input with icon"
-    icon="download"
-  />
+    icon="search"
+  />  
+)
+
+const sizeInput = () => (
+  <>
+    <Input 
+      style={{width: '300px'}}
+      defaultValue="large size"
+      size="lg"
+    />
+    <Input
+      style={{width: '300px'}}
+      placeholder="small size"
+      size="sm"
+    />
+  </>
+)
+
+const pandInput = () => (
+  <>   
+    <Input
+      style={{width: '300px'}}
+      defaultValue="prepend text"
+      prepend="https://"
+    />
+    <Input
+      style={{width: '300px'}}
+      defaultValue="google"
+      append=".com"
+    />
+  </>
 )
 
 storiesOf('Input component', module)
   .add('Input', defaultInput)
   .add('被禁用的Input', disabledInput)
   .add('带图标的 Input', iconInput)
+  .add('大小不同的Input', sizeInput)
+  .add('带前后缀的Input', pandInput)
