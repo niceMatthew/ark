@@ -6,16 +6,19 @@ import "../src/styles/index.scss"
 
 library.add(fas)
 
-
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  // actions: { argTypesRegex: "^on[A-Z].*" },
+  options: {
+    method: '',
+    storySort: {
+      order: ['Intro', 'components'],
+    },
+  },
 }
 
 const wrapperStyle = {
   padding: '20px 40px'
 }
-
-
 
 export const decorators = [
   (storyFn) =>(
@@ -28,3 +31,4 @@ export const decorators = [
     header: false,
     inline: true
   })]
+

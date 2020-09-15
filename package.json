@@ -1,8 +1,8 @@
 {
-  "name": "arkship",
-  "version": "0.1.4",
+  "name": "arkd",
+  "version": "0.1.0",
   "description": "React components library",
-  "author": "ark Zhang",
+  "author": "niceMatthew",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -13,10 +13,10 @@
     "UI",
     "React"
   ],
-  "homepage": "http://arkship.xyz",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arkmute/arkship"
+    "url": "https://github.com/niceMatthew/ark"
   },
   "files": [
     "dist"
