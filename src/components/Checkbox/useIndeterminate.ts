@@ -1,0 +1,42 @@
+import * as React from 'react';
+import { UseCheckboxState } from './useCheckboxState';
+
+export type UseIndeterminateOptions = {
+    checked?: boolean;
+    state?: UseCheckboxState['state'];
+    indeterminate?: boolean;
+};
+
+export const useIndeterminate = ({
+    checked,
+    state,
+    indeterminate: indeterminateFromProps,
+}: UseIndeterminateOptions): {
+    ref: React.RefObject<HTMLInputElement>;
+    'aria-checked': React.AriaAttributes['aria-checked'];
+} => {
+    const [indeterminate, setStatus] = React.useState(false);
+    const ref = React.useRef<HTMLInputElement>(null);
+
+    React.useEffect(() => {
+      if(state !== undefined && ref.current) {
+        setStatus(state === 'indeterminate')
+      }
+    }, [state]);
+
+    React.useEffect(() => {
+      if(
+        state !== 'indeterminate' && 
+        ref.current && 
+        typeof indeterminateFromProps !== 'undefined'
+      ) {
+        ref.current.checked = indeterminateFromProps;
+        setStatus(indeterminateFromProps)
+      }
+    }, [indeterminateFromProps, state])
+
+    return {
+      ref,
+      'aria-checked': indeterminate ? 'mixed' : checked
+    }
+}

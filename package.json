@@ -27,6 +27,8 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "nanoid": "^3.1.12",
+    "react-merge-refs": "^1.1.0",
     "react-transition-group": "^4.3.0"
   },
   "peerDependencies": {

@@ -18,8 +18,8 @@ const Alert: FC<AlertProps> = ({
   className = '',
   ...restProps
 }) => {
-  const [closed, setClosed] = React.useState(false);
-  const ref = React.useRef<HTMLElement>();
+  // const [closed, setClosed] = React.useState(false);
+  // const ref = React.useRef<HTMLElement>();
   const classes = classNames('alert', className, {
     [`alert-${alertType}`]: alertType
   })
