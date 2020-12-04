@@ -728,3 +728,111 @@ main {
     background-color: #f8f9fa; }
   .ark-progress-bar .color-dark {
     background-color: #343a40; }
+
+.calendar-container {
+  box-sizing: border-box;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%; }
+  .calendar-container h1,
+  .calendar-container h2,
+  .calendar-container h3,
+  .calendar-container h4,
+  .calendar-container h5,
+  .calendar-container h6,
+  .calendar-container p {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Varela Round', sans-serif; }
+
+.calendar-container h1, .calendar-container h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Varela Round', sans-serif; }
+
+.calendar-header {
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between; }
+
+.month-indicator {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; }
+  .month-indicator h4 {
+    cursor: pointer; }
+    .month-indicator h4:hover {
+      transform: scale(1.05); }
+
+.bae-date-indicator {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(auto, 1fr));
+  grid-template-rows: repeat(6, minmax(35px, 1fr));
+  grid-gap: 5px;
+  padding: 0 15px; }
+  .bae-date-indicator .date-icon {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    cursor: pointer; }
+    .bae-date-indicator .date-icon[data-active-month='false'] {
+      color: rgba(0, 0, 0, 0.3); }
+    .bae-date-indicator .date-icon.active, .bae-date-indicator .date-icon.selected {
+      border-radius: 50%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+
+.weekday-indicators {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(auto, 1fr));
+  grid-template-rows: 1;
+  padding: 15px; }
+  .weekday-indicators .weekday-indicator-icon {
+    height: 25px;
+    width: 44px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer; }
+    .weekday-indicators .weekday-indicator-icon.active {
+      border-radius: 50%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+
+.calendar-container h1,
+.calendar-container h2,
+.calendar-container h3,
+.calendar-container h4,
+.calendar-container h5,
+.calendar-container h6 {
+  color: #f8f8ff; }
+
+.calendar-container .calendar-header {
+  background-color: #fa8072; }
+
+.calendar-container .weekday-indicators .weekday-indicator-icon {
+  color: #d95e39; }
+  .calendar-container .weekday-indicators .weekday-indicator-icon.active {
+    background-color: #fa8072;
+    color: #f8f8ff; }
+
+.calendar-container .bae-date-indicator .date-icon.active {
+  background-color: #ffa98f;
+  color: #f8f8ff; }
+
+.calendar-container .bae-date-indicator .date-icon.selected {
+  background-color: #fa8072;
+  color: #f8f8ff; }
+
+.calendar-container .month-indicator {
+  background-color: #fa8072; }

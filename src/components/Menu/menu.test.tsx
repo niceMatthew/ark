@@ -3,6 +3,11 @@ import { render, RenderResult, fireEvent, cleanup, wait  } from '@testing-librar
 import Menu, {MenuProps} from './menu';
 import MenuItem from './menuItem';
 import SubMenu from './subMenu'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
+
 const testProps: MenuProps = { 
   defaultIndex: '0',
   onSelect: jest.fn(),

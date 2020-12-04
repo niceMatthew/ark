@@ -25,8 +25,8 @@ import classNames from 'classnames';
 var Alert = function (_a) {
     var _b;
     var alertType = _a.alertType, message = _a.message, description = _a.description, style = _a.style, _c = _a.className, className = _c === void 0 ? '' : _c, restProps = __rest(_a, ["alertType", "message", "description", "style", "className"]);
-    var _d = React.useState(false), closed = _d[0], setClosed = _d[1];
-    var ref = React.useRef();
+    // const [closed, setClosed] = React.useState(false);
+    // const ref = React.useRef<HTMLElement>();
     var classes = classNames('alert', className, (_b = {},
         _b["alert-" + alertType] = alertType,
         _b));

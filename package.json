@@ -1,5 +1,5 @@
 {
-  "name": "arkd",
+  "name": "arkt",
   "version": "0.1.0",
   "description": "React components library",
   "author": "niceMatthew",
@@ -27,6 +27,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "moment": "^2.29.1",
     "nanoid": "^3.1.12",
     "react-merge-refs": "^1.1.0",
     "react-transition-group": "^4.3.0"
@@ -38,7 +39,7 @@
   "scripts": {
     "start": "react-scripts start",
     "clean": "rimraf ./dist",
-    "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
+    "lint": "eslint --ext js,ts,tsx src --max-warnings 50",
     "build": "npm run clean && npm run build-ts && npm run build-css",
     "test": "react-scripts test",
     "test:nowatch": "cross-env CI=true react-scripts test",
@@ -71,11 +72,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.0.21",
-    "@storybook/react": "^6.0.21",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/addons": "^6.1.9",
+    "@storybook/react": "^6.1.9",
+    "@storybook/theming": "^6.1.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@types/classnames": "^2.2.9",
@@ -84,7 +87,7 @@
     "@types/react": "^16.9.13",
     "@types/react-dom": "16.9.4",
     "@types/react-transition-group": "^4.2.3",
-    "@types/storybook__addon-info": "^5.2.1",
+    "@types/storybook__addon-info": "^5.2.3",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.0",
     "husky": "^4.2.1",
@@ -94,9 +97,9 @@
     "react-docgen-typescript-loader": "^3.6.0",
     "react-dom": "^16.12.0",
     "react-is": "^16.13.1",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.4.4",
     "rimraf": "^3.0.1",
     "sass-loader": "^10.0.1",
-    "typescript": "3.7.2"
+    "typescript": "^3.8"
   }
 }
