@@ -36,7 +36,7 @@ yarn add arkt
 ## 🔨 Usage
 
 ```jsx
-import { Button, DatePicker } from 'antd';
+import { Button, DatePicker } from 'arkt';
 
 const App = () => (
   <>
@@ -54,6 +54,6 @@ import 'arkt/dist/index.css';
 
 ### TypeScript
 
-`antd` is written in TypeScript with complete definitions
+`arkt` is written in TypeScript with complete definitions
 
 
